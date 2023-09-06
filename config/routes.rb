@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   # destroy "/favorites/:id" => "favorites#destroy"
 
   # get "/signup" => "users#new"
-  # post "/users" => "users#create"
+  post "/users" => "users#create"
+
+  #login
+  post "/sessions" => "sessions#create"
 end
