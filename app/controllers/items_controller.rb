@@ -5,12 +5,15 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find_by(id: params[:id])
-    render :show
+    @movie = Item.find(params[:id])
+    render json: @movie
   end
 
   def new
     @item = Item.new
     render :new
   end
+
+  
+
 end
